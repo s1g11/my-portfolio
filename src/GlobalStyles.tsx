@@ -18,6 +18,7 @@ export const GlobalStyles = createGlobalStyle`
 
   a, a:link, a:visited  {
       text-decoration: none;
+      color: #000;
   }
 
   a:hover  {
@@ -100,5 +101,9 @@ export const GlobalStyles = createGlobalStyle`
   h3 {
     font-size: 25px;
     font-weight: bold;
+  }
+
+  p { 
+    text-align: justify;
   }
 `

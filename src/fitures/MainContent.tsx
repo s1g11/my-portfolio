@@ -1,5 +1,9 @@
 import styled from "styled-components"
 
+type MyProjectLinkProps = {
+  backgroundImage: string
+}
+
 export const MainContent = () => {
   return (
     <>
@@ -48,20 +52,34 @@ export const MainContent = () => {
           <h2>My projects</h2>
           <ul>
             <li>
-              <a href="">
+              <MyProjectLink backgroundImage="../src/assets/todolist.jpg" href="#">
                 <h3>Todo List</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quaerat numquam iste eos labore? Ea optio nam autem ad maxime?</p>
-              </a>
+              </MyProjectLink>
             </li>
             <li>
-              <a href="">
+              <MyProjectLink backgroundImage="../src/assets/cards.jpg" href="#">
                 <h3>Cards</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quaerat numquam iste eos labore? Ea optio nam autem ad maxime?</p>
-              </a>
+              </MyProjectLink>
             </li>
           </ul>
         </Wrapper>
       </MyProjectsBlock>
+
+      <AboutMeBlock>
+        <Wrapper>
+          <div>
+            <h2>About me</h2>
+            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+            <img src="../src/assets/aboutme1.jpg" alt="" />
+          </div>
+          <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus excepturi impedit architecto quaerat tenetur iste doloribus vel pariatur nobis quibusdam voluptate mollitia quos, fuga voluptatem. Explicabo numquam labore itaque magnam alias dolore minima consequuntur asperiores cupiditate nemo laboriosam incidunt pariatur totam ipsum, odio esse suscipit enim, sequi assumenda dolorem aspernatur eum, quas neque. At quidem fugiat repellendus, quo corrupti ullam in unde mollitia eligendi nostrum natus maiores ut magni officia ab nesciunt aliquid soluta cum, accusamus inventore quibusdam nihil corporis! Natus amet exercitationem illum eos quos eaque rem, possimus eum debitis aspernatur at in assumenda illo magni aliquid dolores saepe.</p>
+            <img src="../src/assets/mainPhoto.jpg" alt="" />
+          </div>
+        </Wrapper>
+      </AboutMeBlock>
     </>
   )
 }
@@ -69,6 +87,53 @@ export const MainContent = () => {
 const Wrapper = styled.div`
   max-width: 1600px;
   margin: 0 auto;
+`
+
+const AboutMeBlock = styled.div`
+  padding: 100px 10px;
+  background-color: #131212;
+  color: #fff;
+
+  ${Wrapper} {
+    display: flex;
+    gap: 0 5%;
+
+    h2 {
+      margin: 0 0 40px 0;
+    }
+    
+    div {
+      width: 45%;
+      display: flex;
+      flex-direction: column;
+
+      &:first-child {
+        img {
+          margin: auto;
+        } 
+      }
+      &:last-child {
+        p {
+          margin: 0 0 150px 0;
+        }
+        img {
+          align-self: flex-end;
+          height: 500px;
+        }
+      }
+    }
+
+    p {
+      margin: 0 0 50px 0;
+    }
+
+    img {
+      width: 400px;
+      height: 400px;
+      box-shadow: 4px 4px 1px #232121;
+    }
+
+  }
 `
 
 const MyProjectsBlock = styled.div`
@@ -84,19 +149,25 @@ const MyProjectsBlock = styled.div`
 
   li {
     width: 1000px;
-    background-color: #000;
-  }
-
-  a {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 250px 50px;
   }
 
   p {
     max-width: 300px;
   }
+`
+
+
+const MyProjectLink = styled.a<MyProjectLinkProps>`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 250px 50px;
+  /* background-color: rgba(71, 71, 71, 0.452); */
+  background-image: url(${(props) => props.backgroundImage});
+  /* background-blend-mode: color; */
+  backdrop-filter: blur(10px);
+  /* filter: blur(5px); */
+  box-shadow: 4px 4px 2px rgba(71, 71, 71, 0.152);
 `
 
 const SkillsBlock = styled.div`
