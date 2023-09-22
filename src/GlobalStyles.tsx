@@ -99,7 +99,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   h3 {
-    font-size: 25px;
+    font-size: 40px;
     font-weight: bold;
   }
 
