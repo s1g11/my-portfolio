@@ -37,6 +37,7 @@ const StyledSocialNetwork = styled.div`
 
   svg {
     fill: black;
+    transition: 0.2s;
   }
   a:nth-child(1):hover svg {
       fill: #4867AA;

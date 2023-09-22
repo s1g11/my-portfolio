@@ -26,7 +26,12 @@ export const MyProjectLink = styled.a<MyProjectLinkProps> `
   /* background-blend-mode: color; */
   backdrop-filter: blur(10px);
   /* filter: blur(5px); */
-  box-shadow: 4px 4px 2px rgba(71, 71, 71, 0.152);
+  box-shadow: 3px 3px 1px rgba(71, 71, 71, 0.150);
+  transition: 0.2s;
+
+  &:hover {
+    box-shadow: 3px 3px 1px rgba(71, 71, 71, 0.300);
+  }
 
   p {
     max-width: 300px;
