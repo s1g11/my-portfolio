@@ -7,7 +7,7 @@ export const ContactForm = () => {
     <StyledContactForm>
       <h3>Subscribe to my emailing list</h3>
       <form>
-        <StyledInput type="text" placeholder="Enter your email" />
+        <StyledInput placeholder="Enter your email" type="email" />
         <StyledButton type="submit">Subscribe</StyledButton>
       </form>
       <p>By subscribing you agree to with our <a href="#">Privacy Policy</a></p>

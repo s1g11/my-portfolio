@@ -15,10 +15,18 @@ export const Contancts = () => {
 const StyledContancts = styled.div`
   display: flex;
   justify-content: space-between;
-  padding: 100px 0;
+
+  flex-wrap: wrap;
+  padding: 100px 10px;
   align-items: center;
 
   h3 {
     font-size: 30px;
+  }
+
+  @media (max-width: 858px) {
+    padding: 50px 10px;
+    justify-content: center;
+    text-align: center;
   }
 `;

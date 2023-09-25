@@ -106,4 +106,8 @@ export const GlobalStyles = createGlobalStyle`
   p { 
     text-align: justify;
   }
+
+  img {
+    object-fit: cover;
+  }
 `

@@ -3,6 +3,7 @@ import { Skill } from "../../components/Skill"
 import { MyProjectLink } from "../../components/MyProjectLink"
 import { Contancts } from "../../components/Contancts"
 import { IntroductionBlock, SkillsBlock, MyProjectsBlock, AboutMeBlock } from "./StyledMainContent"
+import mainPhoto from "../../assets/mainPhoto.jpg"
 
 export type MyProjectLinkProps = {
   backgroundImage: string
@@ -14,8 +15,13 @@ export const MainContent = () => {
 
       <IntroductionBlock>
         <Wrapper>
-          <span>Hello, I'm Roman</span>
-          <h1>Front-end developer</h1>
+          <div>
+            <span>Hello, I'm Roman</span>
+            <h1>Front-end developer</h1>
+          </div>
+          <div>
+            <img src={mainPhoto} alt="photo" />
+          </div>
         </Wrapper>
       </IntroductionBlock>
 

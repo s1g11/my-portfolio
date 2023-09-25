@@ -19,6 +19,7 @@ export const MyProject = (props: PropsWithChildren<MyProjectPropsType>) => {
 export const MyProjectLink = styled.a<MyProjectLinkProps> `
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   padding: 250px 50px;
   /* background-color: rgba(71, 71, 71, 0.452); */
@@ -28,6 +29,10 @@ export const MyProjectLink = styled.a<MyProjectLinkProps> `
   /* filter: blur(5px); */
   box-shadow: 3px 3px 1px rgba(71, 71, 71, 0.150);
   transition: 0.2s;
+
+  h3 {
+    margin: 0 0 40px 0;
+  }
 
   &:hover {
     box-shadow: 3px 3px 1px rgba(71, 71, 71, 0.300);

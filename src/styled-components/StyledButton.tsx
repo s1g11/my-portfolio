@@ -12,10 +12,10 @@ export const StyledButton = styled.button`
   &:before {
     content: '';
     position: absolute;
-    top: 0;
+    top: 94%;
     right: 100%;
     width: 100%;
-    height: 100%;
+    height: 2px;
     background-color: #000;
     transition: 0.2s;
     z-index: -1;
@@ -23,10 +23,10 @@ export const StyledButton = styled.button`
   &:after {
     content: '';
     position: absolute;
-    top: 0;
+    top: 94%;
     left: 100%;
     width: 100%;
-    height: 100%;
+    height: 2px;
     background-color: #000;
     transition: 0.2s;
     z-index: -1;
@@ -34,7 +34,7 @@ export const StyledButton = styled.button`
 
   &:hover {
     /* background-color: #000; */
-    color: #fff;
+    /* color: #fff; */
     border: 2px solid #000;
     
     &:before {

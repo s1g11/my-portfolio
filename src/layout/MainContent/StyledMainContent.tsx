@@ -6,21 +6,20 @@ export const AboutMeBlock = styled.div`
   background-color: #131212;
   color: #fff;
 
-  ${Wrapper} div {
+  h2 {
+      margin: 0 0 60px 0;  
+  }
+
+  ${Wrapper} {
+    div {
     display: flex;
-    gap: 0 100px;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
 
-    h2 {
-      margin: 0 0 40px 0;
-    }
-    
     div {
-      /* width: 45%; */
       display: flex;
       flex-direction: column;
-      max-width: 700px;
+      max-width: 650px;
 
       &:first-child {
         h3 {
@@ -52,10 +51,26 @@ export const AboutMeBlock = styled.div`
       box-shadow: 4px 4px 1px #232121;
     }
 
+    @media (max-width: 1200px) {
+      div {
+        &:last-child {
+          p {
+            margin: 0 0 50px 0;
+          }
+        } 
+      }
+
+      h2 {
+        margin: 0 0 10px 0;
+      }
+    }
+
+    @media (max-width: 1337px) {
+      justify-content: center;
+    }
   }
+  } 
 `
-
-
 
 export const MyProjectsBlock = styled.div`
 
@@ -66,17 +81,27 @@ export const MyProjectsBlock = styled.div`
     gap: 60px;
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
 
   li {
-    width: 1000px;
+    width: 100%;
+  }
+
+  li a {
+    margin: 0 auto;
+    max-width: 1000px;
+  }
+
+  @media (max-width: 1200px) {
+    padding: 50px 10px;
   }
 `;
 
 export const SkillsBlock = styled.div`
   background-color: #131212;
   color: #fff;
-  padding: 150px 20px;
+  padding: 150px 10px;
 
   ol {
     display: flex;
@@ -86,10 +111,14 @@ export const SkillsBlock = styled.div`
     list-style: none;
     counter-reset: skill 0;
   }
+
+  @media (max-width: 1200px) {
+    padding: 50px 10px;
+  }
 `;
 
 export const IntroductionBlock = styled.div`
-  padding: 350px 10px;
+  padding: 200px 40px 200px 10px;
   position: relative;
 
   h1 {
@@ -101,25 +130,42 @@ export const IntroductionBlock = styled.div`
     font-size: 35px;
   }
 
-  &:before {
-    content: "";
-    width: 412px;
-    height: 550px;
-    position: absolute;
-    top: 15%;
-    left: 60%;
-    background-color: #E7E7E7;
-    transform: rotate(-10deg);
+  ${Wrapper} {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+
+    div:nth-child(2) {
+    position: relative;
+
+      &:before{
+        content: '';
+        position: absolute;
+        width: 450px;
+        height: 600px;
+        transform: rotate(-5deg);
+        top: 0;
+        right: 0;
+        background-color: #E7E7E7;
+      }
+    }
+
+    img {
+      max-width: 450px;
+      transform: rotate(5deg);
+    }
+
   }
-  &:after {
-    content: "";
-    background-image: url("src/assets/mainPhoto.jpg");
-    background-size: contain;
-    width: 412px;
-    height: 550px;
-    position: absolute;
-    top: 15%;
-    left: 60%;
-    transform: rotate(10deg);
-  }
+  @media (max-width: 1000px) {
+    padding: 100px 40px 100px 10px;
+
+      ${Wrapper} {
+        flex-wrap: wrap;
+        justify-content: center;
+
+        div + div {
+          margin: 50px 0 0 0;
+        }
+      } 
+    }
 `;
