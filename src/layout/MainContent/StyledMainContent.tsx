@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Wrapper } from "../../styled-components/Wrapper";
 
-export const AboutMeBlock = styled.div`
+export const AboutMeBlock = styled.section`
   padding: 100px 10px;
   background-color: #131212;
   color: #fff;
@@ -72,7 +72,7 @@ export const AboutMeBlock = styled.div`
   } 
 `
 
-export const MyProjectsBlock = styled.div`
+export const MyProjectsBlock = styled.section`
 
   padding: 100px 10px;
 
@@ -98,7 +98,7 @@ export const MyProjectsBlock = styled.div`
   }
 `;
 
-export const SkillsBlock = styled.div`
+export const SkillsBlock = styled.section`
   background-color: #131212;
   color: #fff;
   padding: 150px 10px;
@@ -117,7 +117,7 @@ export const SkillsBlock = styled.div`
   }
 `;
 
-export const IntroductionBlock = styled.div`
+export const IntroductionBlock = styled.section`
   padding: 200px 40px 200px 10px;
   position: relative;
 
