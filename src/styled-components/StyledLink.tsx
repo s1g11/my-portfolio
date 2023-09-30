@@ -52,9 +52,11 @@ export const StyledLink = styled.a`
 
     &:before {
       top: 90%;
+      display: none;
     }
     &:after {
       top: 90%;
+      display: none;
     }
   }
 `;
