@@ -16,7 +16,6 @@ const StyledContancts = styled.div`
   display: flex;
   justify-content: space-between;
 
-  flex-wrap: wrap;
   padding: 100px 10px;
   align-items: center;
 
@@ -28,9 +27,23 @@ const StyledContancts = styled.div`
     font-size: 30px;
   }
 
+  @media (max-width: 950px) {
+    flex-direction: column;
+  }
+
   @media (max-width: 858px) {
     padding: 50px 10px;
     justify-content: center;
     text-align: center;
+    h3 {
+      font-size: 25px;
+    }
+  }
+  @media (max-width: 510px) {
+    padding: 20px 10px;
+    margin: 0;
+    h3 {
+      font-size: 19px;
+    }
   }
 `;

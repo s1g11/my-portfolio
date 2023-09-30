@@ -35,4 +35,10 @@ const StyledContactForm = styled.div`
     text-decoration: underline;
     color: ${props => props.theme.colors.black};
   }
+
+  @media (max-width: 470px) {
+    form {
+      flex-direction: column;
+    }
+  }
 ` 

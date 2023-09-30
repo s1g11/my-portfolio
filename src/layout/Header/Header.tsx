@@ -41,7 +41,7 @@ const StyledHeader = styled.header`
   width: 100%;
 
   @media (max-width: 680px) { 
-    height: 90px;
+    height: 70px;
   }
 `
 
@@ -76,8 +76,8 @@ const StyledBurgerMenu = styled.div`
     position: fixed;
     width: 50px;
     height: 50px;
-    right: 20px;
-    top: 20px;
+    right: 10px;
+    top: 10px;
   }
 
   /* Color/shape of close button cross */

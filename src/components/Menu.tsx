@@ -50,6 +50,12 @@ const StyledMenu = styled.ul`
 
   @media(max-width: 680px) {
     display: none;
+    li {
+      margin: 0 !important;
+      a {
+        font-size: 17px;
+      }
+    }
   }
 `
 

@@ -6,7 +6,7 @@ export const StyledFooter = styled.footer`
   padding: 50px 100px;
   color: ${props => props.theme.colors.primary};
 
-  @media (max-width: 560px) {
+  @media (max-width: 600px) {
     flex-direction: column;
     justify-content: center;
     align-items: center;

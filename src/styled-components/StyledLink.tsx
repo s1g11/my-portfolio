@@ -46,4 +46,15 @@ export const StyledLink = styled.a`
       opacity: 1;
     }
   }
+
+  @media (max-width: 450px) {
+    padding: 0 8px;
+
+    &:before {
+      top: 90%;
+    }
+    &:after {
+      top: 90%;
+    }
+  }
 `;

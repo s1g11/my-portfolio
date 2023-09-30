@@ -19,6 +19,10 @@ const StyledSkill = styled.li`
   position: relative;
   padding: 0 0 0 100px;
 
+  @media(max-width: 500px) {
+    padding: 0 0 0 80px;
+  }
+
   &:after {
     content: '0'counter(skill)'.';
     position: absolute;
@@ -28,5 +32,8 @@ const StyledSkill = styled.li`
     font-size: 70px;
     font-weight: 100;
     font-family: "Epilogue", monospace;
+    @media(max-width: 500px) {
+      font-size: 50px;
+    }
   }
 `;

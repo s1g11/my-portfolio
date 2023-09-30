@@ -149,25 +149,61 @@ export const IntroductionBlock = styled.section`
         top: 0;
         right: 0;
         background-color: ${props => props.theme.background.lightShadow};
+        @media (max-width: 510px) {
+          width: 250px;
+          height: 330px;
+        }
       }
     }
 
     img {
       max-width: 450px;
       transform: rotate(5deg);
+      @media (max-width: 510px) {
+        max-width: 250px;
+      }
     }
 
   }
+  @media (max-width: 1100px) { 
+    div {
+      h1 {
+        font-size: 75px !important;
+      }
+    }
+  }
   @media (max-width: 1000px) {
-    padding: 100px 40px 100px 10px;
+    padding: 100px 10px 70px 10px;
 
       ${Wrapper} {
         flex-wrap: wrap;
         justify-content: center;
+        align-items: center;
 
         div + div {
           margin: 50px 0 0 0;
         }
       } 
+    }
+    @media (max-width: 510px) {
+      div {
+        span {
+          font-size: 25px;
+        }
+        h1 {
+          font-size: 60px !important;
+        }
+      }
+      
+    }
+    @media (max-width: 420px) {
+      div {
+        span {
+          font-size: 20px;
+        }
+        h1 {
+          font-size: 40px !important;
+        }
+      }
     }
 `;

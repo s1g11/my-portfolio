@@ -108,6 +108,10 @@ export const GlobalStyles = createGlobalStyle`
     font-weight: 800 !important;
     font-weight: bold;
     line-height: 56px;
+
+    @media (max-width: 600px) {
+      line-height: 40px;
+    }
   }
 
   h4 {
@@ -126,4 +130,18 @@ export const GlobalStyles = createGlobalStyle`
   img {
     object-fit: cover;
   }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  @media(max-width: 500px) {
+    h2 {
+      font-size: 50px;
+    }
+    h3 {
+      font-size: 30px;
+    }
+  }
 `
+

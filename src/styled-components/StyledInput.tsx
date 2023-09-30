@@ -27,6 +27,7 @@ export const StyledLabel = styled.label<StyledLabelPropsType>`
     color: ${props => props.theme.colors.black};
     
     input {
+        width: 100%;
         padding: 10px 35px;
         border: 2px solid ${props => props.theme.colors.black};    
     }
