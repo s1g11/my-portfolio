@@ -4,6 +4,9 @@ import { MyProjectLink } from "../../components/MyProjectLink"
 import { Contancts } from "../../components/Contancts"
 import { IntroductionBlock, SkillsBlock, MyProjectsBlock, AboutMeBlock } from "./StyledMainContent"
 import mainPhoto from "../../assets/mainPhoto.jpg"
+import aboutme1 from "../../assets/aboutme1.jpg"
+import cards from "../../assets/cards.jpg"
+import todolist from "../../assets/todolist.jpg"
 
 export type MyProjectLinkProps = {
   backgroundImage: string
@@ -56,13 +59,13 @@ export const MainContent = () => {
           <h2>My projects</h2>
           <ul>
             <li>
-              <MyProjectLink backgroundImage="../src/assets/todolist.jpg" href="#">
+              <MyProjectLink backgroundImage={todolist} href="#">
                 <h3>Todo List</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quaerat numquam iste eos labore? Ea optio nam autem ad maxime?</p>
               </MyProjectLink>
             </li>
             <li>
-              <MyProjectLink backgroundImage="../src/assets/cards.jpg" href="#">
+              <MyProjectLink backgroundImage={cards} href="#">
                 <h3>Cards</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quaerat numquam iste eos labore? Ea optio nam autem ad maxime?</p>
               </MyProjectLink>
@@ -78,11 +81,11 @@ export const MainContent = () => {
             <div>
 
               <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
-              <img src="../src/assets/aboutme1.jpg" alt="" />
+              <img src={aboutme1} alt="" />
             </div>
             <div>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus excepturi impedit architecto quaerat tenetur iste doloribus vel pariatur nobis quibusdam voluptate mollitia quos, fuga voluptatem. Explicabo numquam labore itaque magnam alias dolore minima consequuntur asperiores cupiditate nemo laboriosam incidunt pariatur totam ipsum, odio esse suscipit enim, sequi assumenda dolorem aspernatur eum, quas neque. At quidem fugiat repellendus, quo corrupti ullam in unde mollitia eligendi nostrum natus maiores ut magni officia ab nesciunt aliquid soluta cum, accusamus inventore quibusdam nihil corporis! Natus amet exercitationem illum eos quos eaque rem, possimus eum debitis aspernatur at in assumenda illo magni aliquid dolores saepe.</p>
-              <img src="../src/assets/mainPhoto.jpg" alt="" />
+              <img src={mainPhoto} alt="" />
             </div>
           </div>
         </Wrapper>
