@@ -17,13 +17,16 @@ const StyledSkill = styled.li`
   max-width: 600px;
   counter-increment: skill 1;
   position: relative;
-  padding: 0 0 0 60px;
+  padding: 0 0 0 100px;
 
   &:after {
     content: '0'counter(skill)'.';
     position: absolute;
+    text-align: right;
     left: 0;
-    top: 0;
-    font-size: 40px;
+    top: 5%;
+    font-size: 70px;
+    font-weight: 100;
+    font-family: "Epilogue", monospace;
   }
 `;

@@ -19,6 +19,7 @@ const StyledContactForm = styled.div`
   display: flex;
   flex-direction: column;
   gap: 15px;
+  color: ${props => props.theme.colors.black};
 
   form {
     display: flex;
@@ -26,7 +27,12 @@ const StyledContactForm = styled.div`
     gap: 10px;
   }
 
+  p {
+    color: ${props => props.theme.colors.black};
+  }
+
   p a {
     text-decoration: underline;
+    color: ${props => props.theme.colors.black};
   }
 ` 

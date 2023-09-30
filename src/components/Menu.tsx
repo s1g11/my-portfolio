@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { StyledLink } from "../styled-components/StyledLink";
 
 type MenuPropsType = {
   disableContacts?: boolean
@@ -7,7 +8,7 @@ type MenuPropsType = {
 export const Menu = (props: MenuPropsType) => {
 
   return (
-    <StyledMenu>
+    <StyledMenu className="contactMenu">
       <li>
         <StyledLink href="">Projects</StyledLink>
       </li>
@@ -52,47 +53,3 @@ const StyledMenu = styled.ul`
   }
 `
 
-export const StyledLink = styled.a`
-  padding: 10px 20px;
-  position: relative;
-  overflow: hidden;
-  
-  &:before {
-    content: '';
-    position: absolute;
-    pointer-events:none;
-    width: 40%;
-    height: 2px;
-    background-color: #000;
-    left: 100%;
-    top: 70%;
-    transition: 0.2s;
-    opacity: 0;
-  }
-  
-  &:after {
-    content: '';
-    position: absolute;
-    pointer-events:none;
-    width: 40%;
-    height: 2px;
-    background-color: #000;
-    right: 100%;
-    top: 70%;
-    transition: 0.2s;
-    opacity: 0;
-  }
-  
-  &:hover {
-    &:before {
-      display: inline-block;
-      left: 50%;
-      opacity: 1;
-    }
-    &:after {
-      display: inline-block;
-      right: 50%;
-      opacity: 1;
-    }
-  }
-`

@@ -1,6 +1,8 @@
 import styled from "styled-components";
-import { Menu, StyledLink } from "../../components/Menu";
+import { Menu } from "../../components/Menu";
+import { StyledLink } from "../../styled-components/StyledLink";
 import { slide as Burger } from 'react-burger-menu'
+import { theme } from "../../Theme.styled";
 
 export const Header = () => {
   return (
@@ -34,7 +36,7 @@ export const BurgerMenu = () => {
 
 const StyledHeader = styled.header`
   position: fixed;
-  background-color: #fff;
+  background-color: ${theme.background.light};
   z-index: 10;
   width: 100%;
 
@@ -48,20 +50,20 @@ const StyledBurgerMenu = styled.div`
 
   a {
     text-align: center;
-    color: #fff;
+    color: ${props => props.theme.colors.secondary} !important;
 
     &:after {
-      background-color: #fff;
+      background-color: ${props => props.theme.background.light};
       width: 20%;
     }
 
     &:before {
-      background-color: #fff;
+      background-color: ${props => props.theme.background.light};
       width: 20%;
     }
 
     &:visited {
-      color: #fff
+      color: ${props => props.theme.colors.secondary} !important;
     }
   }
 
@@ -78,19 +80,14 @@ const StyledBurgerMenu = styled.div`
     top: 20px;
   }
 
-  /* Color/shape of burger icon bars */
-  .bm-burger-bars {
-    background: #131212;
-  }
-
   /* Color/shape of close button cross */
   .bm-cross {
-    background: #bdc3c7;
+    background: ${props => props.theme.background.lightShadow};
   }
 
   /* General sidebar styles */
   .bm-menu {
-    background: #131212;
+    background: ${props => props.theme.background.dark};
     padding: 2.5em 1.5em 0;
     font-size: 1.15em;
   }

@@ -7,6 +7,6 @@ export const Wrapper = styled.div`
 
   hr {
     height: 2px;
-    background-color: #000;
+    background-color: ${props => props.theme.background.black};
   }
 `;

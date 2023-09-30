@@ -92,19 +92,35 @@ export const GlobalStyles = createGlobalStyle`
     display: block;
   }
 
+  * {
+    font-family: ${props => props.theme.font};
+  }
+
   h2 {
     font-size: 80px;
-    font-weight: bold;
+    font-weight: 800;
     margin: 0 0 100px 0;
+    text-transform: uppercase;
   }
 
   h3 {
     font-size: 40px;
+    font-weight: 800 !important;
     font-weight: bold;
+    line-height: 56px;
+  }
+
+  h4 {
+    font-size: 40px;
+    font-weight: 200 !important;
+    font-weight: bold;
+    line-height: 56px;
   }
 
   p { 
     text-align: justify;
+    font-weight: 400 !important;
+    line-height: 27px;
   }
 
   img {

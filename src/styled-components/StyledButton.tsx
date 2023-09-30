@@ -16,7 +16,7 @@ export const StyledButton = styled.button`
     right: 100%;
     width: 100%;
     height: 2px;
-    background-color: #000;
+    background-color: ${props => props.theme.background.black};
     transition: 0.2s;
     z-index: -1;
   }
@@ -27,15 +27,13 @@ export const StyledButton = styled.button`
     left: 100%;
     width: 100%;
     height: 2px;
-    background-color: #000;
+    background-color: ${props => props.theme.background.black};
     transition: 0.2s;
     z-index: -1;
   }
 
   &:hover {
-    /* background-color: #000; */
-    /* color: #fff; */
-    border: 2px solid #000;
+    border: 2px solid ${props => props.theme.background.black};
     
     &:before {
       right: 50%;

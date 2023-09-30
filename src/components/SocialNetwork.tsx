@@ -36,7 +36,7 @@ const StyledSocialNetwork = styled.div`
   justify-content: space-between;
 
   svg {
-    fill: black;
+    fill: ${props => props.theme.colors.primary};
     transition: 0.2s;
   }
   a:nth-child(1):hover svg {

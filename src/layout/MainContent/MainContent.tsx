@@ -77,7 +77,7 @@ export const MainContent = () => {
           <div>
             <div>
 
-              <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+              <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
               <img src="../src/assets/aboutme1.jpg" alt="" />
             </div>
             <div>

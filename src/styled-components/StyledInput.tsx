@@ -24,17 +24,18 @@ type StyledLabelPropsType = {
 export const StyledLabel = styled.label<StyledLabelPropsType>`
     position: relative;
     overflow: hidden;
+    color: ${props => props.theme.colors.black};
     
     input {
         padding: 10px 35px;
-        border: 2px solid;    
+        border: 2px solid ${props => props.theme.colors.black};    
     }
 
     &:before {
         content: '';
         height: 2px;
         width: 50%;
-        background-color: #000;
+        background-color: ${props => props.theme.colors.black};
         position: absolute;
         top: 90%;
         right: ${props => props.active ? "50%" : "100%"};
@@ -44,7 +45,7 @@ export const StyledLabel = styled.label<StyledLabelPropsType>`
         content: '';
         height: 2px;
         width: 50%;
-        background-color: #000;
+        background-color: ${props => props.theme.colors.black};
         position: absolute;
         top: 90%;
         left: ${props => props.active ? "50%" : "100%"};

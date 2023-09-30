@@ -3,8 +3,8 @@ import { Wrapper } from "../../styled-components/Wrapper";
 
 export const AboutMeBlock = styled.section`
   padding: 100px 10px;
-  background-color: #131212;
-  color: #fff;
+  background-color: ${props => props.theme.background.dark};
+  color: ${props => props.theme.colors.grey};
 
   h2 {
       margin: 0 0 60px 0;  
@@ -48,7 +48,7 @@ export const AboutMeBlock = styled.section`
     img {
       width: 400px;
       height: 400px;
-      box-shadow: 4px 4px 1px #232121;
+      box-shadow: 4px 4px 1px ${props => props.theme.background.darkShadow};
     }
 
     @media (max-width: 1200px) {
@@ -73,7 +73,7 @@ export const AboutMeBlock = styled.section`
 `
 
 export const MyProjectsBlock = styled.section`
-
+  color: ${props => props.theme.colors.primary};
   padding: 100px 10px;
 
   ul {
@@ -99,8 +99,8 @@ export const MyProjectsBlock = styled.section`
 `;
 
 export const SkillsBlock = styled.section`
-  background-color: #131212;
-  color: #fff;
+  background-color: ${props => props.theme.background.dark};
+  color: ${props => props.theme.colors.secondary};
   padding: 150px 10px;
 
   ol {
@@ -120,10 +120,12 @@ export const SkillsBlock = styled.section`
 export const IntroductionBlock = styled.section`
   padding: 200px 40px 200px 10px;
   position: relative;
+  color: ${props => props.theme.colors.primary};
 
   h1 {
-    font-size: 80px;
-    font-weight: bold;
+    font-size: 100px;
+    font-weight: 800;
+    text-transform: uppercase;
   }
 
   span {
@@ -146,7 +148,7 @@ export const IntroductionBlock = styled.section`
         transform: rotate(-5deg);
         top: 0;
         right: 0;
-        background-color: #E7E7E7;
+        background-color: ${props => props.theme.background.lightShadow};
       }
     }
 

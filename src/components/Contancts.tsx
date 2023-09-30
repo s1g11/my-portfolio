@@ -20,6 +20,10 @@ const StyledContancts = styled.div`
   padding: 100px 10px;
   align-items: center;
 
+  .contactMenu {
+    display: flex;
+  }
+
   h3 {
     font-size: 30px;
   }

@@ -4,8 +4,7 @@ export const StyledFooter = styled.footer`
   display: flex;
   justify-content: space-between;
   padding: 50px 100px;
-  /* flex-wrap: wrap; */
-
+  color: ${props => props.theme.colors.primary};
 
   @media (max-width: 560px) {
     flex-direction: column;

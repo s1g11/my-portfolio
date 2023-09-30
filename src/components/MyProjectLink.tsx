@@ -22,20 +22,18 @@ export const MyProjectLink = styled.a<MyProjectLinkProps> `
   flex-wrap: wrap;
   align-items: center;
   padding: 250px 50px;
-  /* background-color: rgba(71, 71, 71, 0.452); */
   background-image: url(${(props) => props.backgroundImage});
-  /* background-blend-mode: color; */
   backdrop-filter: blur(10px);
-  /* filter: blur(5px); */
-  box-shadow: 3px 3px 1px rgba(71, 71, 71, 0.150);
+  box-shadow: 3px 3px 1px ${props => props.theme.background.unhoverShadow};
   transition: 0.2s;
+  color: ${props => props.theme.colors.secondary} !important;
 
   h3 {
     margin: 0 0 40px 0;
   }
 
   &:hover {
-    box-shadow: 3px 3px 1px rgba(71, 71, 71, 0.300);
+    box-shadow: 3px 3px 1px ${props => props.theme.background.hoverShadow};
   }
 
   p {
